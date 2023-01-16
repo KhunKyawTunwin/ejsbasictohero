@@ -1,0 +1,25 @@
+<%- include('layout/header') %>
+    <main>
+      <h2>Welcome to my Home Page</h2> 
+      <form action="/" method="post">
+        <input
+          type="text"
+          placeholder="Enter a name of Progarmming Lang"
+          name="plName"
+        />
+        <button type="submit">Add Data</button>
+      </form>
+      <ul>
+        <% if(plNames.length>0){ %>
+
+        <% for(let i=0; i<plNames.length; i++){ %>
+              <li><%=plNames[i]%></li>
+              <% } %>
+
+        <% } else { %>
+        <p>No dat available</p>
+        <% } %>
+      </ul>
+    </main>
+    
+    <%- include('layout/footer') %>

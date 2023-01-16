@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c2c2c;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+main {
+  padding: 1rem 2rem;
+  height: 90vh;
+}
+
+footer {
+  padding: 1rem 2rem;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+  color: white;
+}
